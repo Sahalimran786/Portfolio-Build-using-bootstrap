@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+html{
+  scroll-behavior: smooth;
+}
+:root{
+  --primary-color: #88BDBC;
+  --secondary-color: #f3bb09;
+}
+.scroll-up-btn{
+  position: fixed;
+  width: 42px;
+  height: 45px;
+  right: 30px;
+  bottom: 10px;
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  line-height: 45px;
+  z-index: 9999;
+  border-radius: 50%;
+  font-size: 20px;
+  border: 1px solid gray;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+}
+/* Navbar Css */
+.font{
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.customize{
+  background-color: var(--primary-color);
+}
+#portfolio{
+  display: none;
+}
+.navbar-toggler {
+  outline: none;
+  border: none;
+}
+.navbar-toggler:focus {
+  outline: unset;
+  border: unset;
+  box-shadow: none;
+}
+.navbar-collapse .nav-link{
+    margin-right: 20px;
+}
+#nav-anchor{
+  color: white;
+}
+#nav-anchor:hover{
+    color: var(--secondary-color);
+}
+#contact-css{
+  text-decoration: none;
+    color: #000000;
+    background-color: white;
+    font-weight: 600;
+    padding: 2px 11px;
+    border-radius: 16px;
+    font-size: 18px;
+    margin: 0px 20px;
+}
+#contact-css:hover,#contact-css:focus{
+  box-shadow: 0px 0px 3px 1px var(--secondary-color);
+}
+
+.carousel-item img{
+  height: 70vh;
+  object-fit: cover;
+}
+#done{
+  background-image: url(../images/4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  font-family: 'Comfortaa', cursive;
+}
+
+.about-section,.service-section,.skill-section,.contact-section,.work-section{
+  min-height: 90vh;
+}
+#about-section .card{
+  max-width: calc(100% - 100px);
+}
+#about-section .card-body{
+  height: 100%;
+}
+.about-title,.service-title,.skill-title,.work-title,.contact-title{
+  position: relative;
+}
+.about-title::before,.service-title::before,.skill-title::before,.work-title::before,.contact-title::before{
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+}
+.service-section{
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.65) 100%, rgba(0, 0, 0, 0.65) 100%, rgba(0, 0, 0, 0.65) 100%),url(../images/3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.service-section .card{
+  cursor: pointer;
+}
+.service-section .card-title{
+  color: var(--primary-color);
+}
+.service-section .card:hover .card-title{
+  color: var(--secondary-color);
+}
+.service-section .card:hover .card-body{
+  transform: scale(1.05);
+}
+.bg-color{
+  background-color: var(--primary-color);
+}

@@ -1,0 +1,29 @@
+@media screen and (max-width:1000px) {
+    .navbar-brand{
+        padding-top: 0px;
+    }
+}
+@media screen and (max-width:876px) {
+    .navbar-brand{
+        padding-top: 0px;
+    }
+    #contact-css{
+        margin: 0px;
+    }
+    #nav-anchor{
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width:767px) {
+    #portfolio{
+        display: block;
+    }
+    #contact-css{
+        margin-bottom: 8px;
+    }
+}
+@media screen and (max-width:992px) {
+    .about-section .col-4{
+        width: auto;
+    }
+}
